@@ -1,0 +1,40 @@
+
+
+
+.community-chest .drawing {
+    font-size: 50px;
+    color: #ffdc73;
+}
+
+.chance .drawing {
+    font-size: 90px;
+    color: #5e3577;
+}
+
+.sell-house .drawing {
+    font-size: 30px;
+    color: #c0eb51;
+}
+
+.buy-house .drawing {
+    font-size: 30px;
+    color: #d2661e;
+}
+
+.railway .drawing,
+.transport .drawing {
+    font-size: 50px;
+    color: #b02f7c;
+}
+.airport .drawing,
+.port .drawing {
+    font-size: 50px;
+    color: #5a6dba;
+}
+
+.radio .drawing,
+.postoffice .drawing
+ {
+    font-size: 50px;
+    color: #f7629b;
+}

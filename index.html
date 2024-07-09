@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+    <link rel="stylesheet" href="board.css">
+    <link rel="stylesheet" href="corner.css">
+    <link rel="stylesheet" href="cells.css">
+    <script src="https://kit.fontawesome.com/cedf26060c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+   <!-- Board -->
+    <div class="board">
+        <!-- board center -->
+        <div class="center"></div>
+
+        <!-- go -->
+        <div class="space corner go">
+            <div class="container">
+                <div class="instructions">Pay 250 as toll tax</div>
+                <div class="go-word">go</div>
+            </div>
+            <div class="arrow fas fa-long-arrow-right"></div>
+        </div>
+        <!-- chest -->
+        <div class="space community-chest">
+            <div class="container">
+                <div class="name">Community Chest</div>
+                <i class="drawing fas fa-cube"></i>
+                <div class="instructions">Follow instructions</div>
+            </div>
+        </div>
+        <!-- delhi -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar light-blue"></div>
+                <div class="name long-name">Delhi</div>
+                <div class="price">4500</div>
+            </div>
+        </div>
+        <!-- agra -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar light-blue"></div>
+                <div class="name long-name">Agra</div>
+                <div class="price">1500</div>
+            </div>
+        </div>
+        <!-- jaipur -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar light-blue"></div>
+                <div class="name long-name">Jaipur</div>
+                <div class="price">2900</div>
+            </div>
+        </div>
+        <!-- Buy House -->
+        <div class="space buy-house">
+            <div class="container">
+                <div class="name">Buy House</div>
+                <i class="drawing fa-solid fa-money-bill-transfer"></i>
+                <div class="instructions">Buy With Double Price</div>
+            </div>
+        </div>
+        <!-- jalandhar -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar red"></div>
+                <div class="name long-name">Jalandhar</div>
+                <div class="price">3000</div>
+            </div>
+        </div>
+        <!-- chance -->
+        <div class="space chance">
+            <div class="container">
+                <div class="name">Chance</div>
+                <i class="drawing fas fa-question"></i>
+            </div>
+        </div>
+        <!-- Ludhiana -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar red"></div>
+                <div class="name long-name">Ludhiana</div>
+                <div class="price">2000</div>
+            </div>
+        </div>
+        <!-- jail -->
+        <div class="space corner jail">
+            <div class="just">Just</div>
+            <div class="drawing">
+                <div class="container">
+                    <div class="name">In</div>
+                    <div class="window">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <i class="person fas fa-regular fa-face-frown-open"></i>
+                    </div>
+                    <div class="name">Jail</div>
+                </div>
+            </div>
+            <div class="visiting">Visiting</div>
+        </div>
+        <!-- dehradun -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar orange"></div>
+                <div class="name long-name">Dehradun</div>
+                <div class="price">2300</div>
+            </div>
+        </div>
+        <!-- Srinagar -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar orange"></div>
+                <div class="name long-name">Srinagar</div>
+                <div class="price">2700</div>
+            </div>
+        </div>
+        <!-- port -->
+        <div class="space port">
+            <div class="container">
+                <div class="name">Port</div>
+                <i class="drawing fa-solid fa-ship"></i>
+                <div class="price">7000</div>
+            </div>
+        </div>
+        <!-- cochin -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar orange"></div>
+                <div class="name long-name">Cochin</div>
+                <div class="price">1500</div>
+            </div>
+        </div>
+        <!-- postoffice -->
+        <div class="space postoffice">
+            <div class="container">
+                <div class="name">Post Office</div>
+                <i class="drawing fa-solid fa-envelopes-bulk"></i>
+                <div class="price">2000</div>
+            </div>
+        </div>
+        <!-- Hyderabad -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar green"></div>
+                <div class="name long-name">Hyderabad</div>
+                <div class="price">2500</div>
+            </div>
+        </div>
+        <!-- Chennai -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar green"></div>
+                <div class="name long-name">Chennai</div>
+                <div class="price">4000</div>
+            </div>
+        </div>
+        <!-- tata -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar green"></div>
+                <div class="name long-name">Tatanagar</div>
+                <div class="price">3500</div>
+            </div>
+        </div>
+        <!-- parking -->
+        <div class="space corner free-parking">
+            <div class="container">
+                <div class="name">Free</div>
+                <i class="drawing fas fa-car"></i>
+                <div class="name">Parking</div>
+            </div>
+        </div>
+        <!-- Kolkata -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar red"></div>
+                <div class="name long-name">Kolkata</div>
+                <div class="price">5000</div>
+            </div>
+        </div>
+        <!-- Chance -->
+        <div class="space chance">
+            <div class="container">
+                <div class="name">Chance</div>
+                <i class="drawing fas fa-question"></i>
+            </div>
+        </div>
+        <!-- Banaras -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar red"></div>
+                <div class="name long-name">Banaras</div>
+                <div class="price">2500</div>
+            </div>
+        </div>
+        <!-- Nagpur -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar red"></div>
+                <div class="name long-name">Nagpur</div>
+                <div class="price">2000</div>
+            </div>
+        </div>
+        <!-- Transort -->
+        <div class="space transport">
+            <div class="container">
+                <div class="name">Transport</div>
+                <i class="drawing fas fa-truck"></i>
+                <div class="price">4000</div>
+            </div>
+        </div>
+        <!-- Radio -->
+        <div class="space radio">
+            <div class="container">
+                <div class="name">Radio</div>
+                <i class="drawing fa-solid fa-radio"></i>
+                <div class="price">2000</div>
+            </div>
+        </div>
+        <!-- Allahabad -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar light-blue"></div>
+                <div class="name long-name">Allahabad</div>
+                <div class="price">1700</div>
+            </div>
+        </div>
+        <!-- Patna -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar light-blue"></div>
+                <div class="name long-name">Patna</div>
+                <div class="price">1500</div>
+            </div>
+        </div>
+        <!--  Take rest -->
+        <div class="space corner rest">
+            <div class="container">
+                <div class="name">Take</div>
+                <i class="drawing fas fa-bed"></i>
+                <div class="name">Rest</div>
+            </div>
+        </div>
+        <!-- Chest -->
+        <div class="space community-chest">
+            <div class="container">
+                <div class="name">Community Chest</div>
+                <i class="drawing fas fa-cube"></i>
+                <div class="instructions">Follow instructions</div>
+            </div>
+        </div>
+        <!-- Ahmedabad -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar green"></div>
+                <div class="name long-name">Ahmedabad</div>
+                <div class="price">2500</div>
+            </div>
+        </div>
+        <!-- Mumbai -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar green"></div>
+                <div class="name long-name">Mumbai</div>
+                <div class="price">4000</div>
+            </div>
+        </div>
+        <!-- Airport -->
+        <div class="space airport">
+            <div class="container">
+                <div class="name">Airport</div>
+                <i class="drawing fas fa-plane"></i>
+                <div class="price">5000</div>
+            </div>
+        </div>
+        <!-- sell house -->
+        <div class="space sell-house">
+            <div class="container">
+                <div class="name">Sell House</div>
+                <i class="drawing fa-solid fa-money-bill-transfer"></i>
+                <div class="instructions">Sell In Double Price</div>
+            </div>
+        </div>
+        <!-- Railway -->
+        <div class="space railway">
+            <div class="container">
+                <div class="name">Railway</div>
+                <i class="drawing fas fa-subway"></i>
+                <div class="price">7000</div>
+            </div>
+        </div>
+        <!-- Kanpur -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar orange"></div>
+                <div class="name long-name">Kanpur</div>
+                <div class="price">3500</div>
+            </div>
+        </div>
+        <!-- Lucknow -->
+        <div class="space property">
+            <div class="container">
+                <div class="color-bar orange"></div>
+                <div class="name long-name">Lucknow</div>
+                <div class="price">1900</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+    <script src="script.js"></script>
+
+</html>

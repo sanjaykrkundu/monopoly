@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.dark-purple {
+    background: #5e3577;
+}
+
+.purple {
+    background: #b02f7c;
+}
+
+.yellow {
+    background: #ffed20;
+}
+
+.light-blue {
+    background: #76cdf5;
+}
+
+.dark-blue {
+    background: #5a6dba;
+}
+
+.orange {
+    background: #fa811d;
+}
+
+.red {
+    background: #f50c2b;
+}
+
+.green {
+    background: #41994e;
+}
+
+
+body {
+    margin: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #080808;
+    text-transform: uppercase;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: 125px repeat(8, 80px) 125px;
+    grid-template-rows: 125px repeat(8, 80px) 125px;
+    grid-gap: 2px;
+    margin: 50px auto;
+    width: 912px;
+    height: 912px;
+    background: #080808;
+    border: 2px solid #080808;
+}
+
+.center {
+    grid-column: 2/10;
+    grid-row: 2/10;
+    background: #fafaf8;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.space {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fafaf8;
+    text-align: center;
+}
+
+.space .container {
+    display: flex;
+    flex-direction: column;
+    transform-origin: center;
+    justify-content: space-between;
+    position: relative;
+    height: 125px;
+    width: 80px;
+}
+
+.space .name,
+.space .instructions {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 10px;
+}
+
+.space .price {
+    font-size: 10px;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+
+.property .color-bar {
+    height: 25px;
+    border-bottom: 2px solid #080808;
+}
+
+.property .name {
+    padding-bottom: 50px;
+}
+
+
+
