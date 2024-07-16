@@ -1,0 +1,39 @@
+/* rgb(192, 218, 90)
+rgb(255, 199, 63)
+rgb(255, 132, 63)
+rgb(195, 72, 72)
+rgb(90, 153, 218)
+rgb(127, 231, 245)
+rgb(0, 150, 136)
+rgb(115, 232, 93)
+rgb(154, 110, 94)
+rgb(198, 63, 162)
+rgb(255, 124, 160)
+rgb(127, 90, 218) */
+
+.position-container {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+
+.position {
+    width: 16px;
+    height: 16px;
+    animation: grow 1s infinite;
+}
+
+@keyframes grow {
+      0% { transform: scale(1.0); }
+     50% { transform: scale(1.3); }
+    100% { transform: scale(1.0); }
+}
+
+
+.position:nth-child(1n) {
+    color: #e40cf7
+}

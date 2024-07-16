@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monopoly</title>
+    <script src="https://kit.fontawesome.com/cedf26060c.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
     <link rel="stylesheet" href="board.css">
-    <link rel="stylesheet" href="corner.css">
     <link rel="stylesheet" href="cells.css">
-    <script src="https://kit.fontawesome.com/cedf26060c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dice.css">
 </head>
 
 <body>
@@ -17,11 +17,28 @@
    <!-- Board -->
     <div class="board">
         <!-- board center -->
-        <div class="center"></div>
+        <div class="center">
+
+        <div class="move">
+            <button type="button" id="move">Move</button>
+            <div id="pos">
+                
+            </div>
+        </div>
+
+        </div>
+
+        
+
 
         <!-- go -->
         <div class="space corner go">
             <div class="container">
+                <div class="position-container">
+                    <div class="position">
+                        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#character_svg__a)"><path d="M16 32c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Z" fill="currentColor"></path><path data-show-on-selected="1" opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M16 15.927c8.837 0 16-8.836 16 0a16 16 0 0 1-32 0c0-8.836 7.163 0 16 0Z" fill="#000"></path><path data-show-on-selected="1" d="M17.586 22.927a4.414 4.414 0 1 0 8.828 0 4.414 4.414 0 0 0-8.828 0ZM5.804 22.927c0 2.438 1.966 4.414 4.391 4.414s4.391-1.976 4.391-4.414c0-2.437-1.966-4.413-4.39-4.413-2.426 0-4.392 1.976-4.392 4.413Z" fill="#fff"></path><path data-show-on-selected="1" d="M20.414 24.747c0 .88.71 1.594 1.586 1.594a1.59 1.59 0 0 0 1.587-1.594c0-.88-.71-1.594-1.587-1.594a1.59 1.59 0 0 0-1.586 1.594ZM8.602 24.747a1.594 1.594 0 1 0 3.188 0 1.594 1.594 0 0 0-3.188 0Z" fill="#000"></path></g><defs><clipPath id="character_svg__a"><path fill="#fff" d="M0 0h32v32H0z"></path></clipPath></defs></svg>
+                    </div>
+                </div>
                 <div class="instructions">Pay 250 as toll tax</div>
                 <div class="go-word">go</div>
             </div>
@@ -316,9 +333,10 @@
         </div>
 
     </div>
+
+
 </body>
-
-
+    
     <script src="script.js"></script>
 
 </html>
