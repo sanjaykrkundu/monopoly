@@ -46,3 +46,41 @@ function buildBoard() {
 
 
 buildBoard();
+
+
+
+
+
+let currentpos = 0;
+const btn_move = document.querySelector("#move");
+btn_move.addEventListener('click', () => {
+    let min = 1;
+    let max = 12;
+    let val = Math.floor(Math.random() * (max - min + 1) + min);
+    console.log("got ", val);
+    move(val);
+});
+
+function move(position = 1){
+  const s = document.querySelector(".position-container");
+  const d = document.querySelectorAll(".space .container");
+  const pos = document.querySelector("#pos");
+  let span =document.createElement("span");
+  span.textContent = position + ",";
+    pos.appendChild(span);
+
+  console.log("enter", currentpos);
+  for (let index = 0; index < position; index++) {
+    currentpos = currentpos + 1;
+    // d[currentpos % d.length].appendChild(s);
+    task(index + 1, s, d[currentpos % d.length]);
+  }
+  console.log("end", currentpos);
+
+}
+
+ function task(i, s, d) {
+   setTimeout(function() {
+        d.appendChild(s);
+   }, 200 * i);
+ }
